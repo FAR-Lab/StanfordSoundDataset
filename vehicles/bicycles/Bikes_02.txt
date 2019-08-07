@@ -1,0 +1,5 @@
+Bikes_02.txt
+
+tags: bikes, stanford, urbansounds
+
+description: bike repair shop

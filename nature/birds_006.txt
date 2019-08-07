@@ -1,0 +1,3 @@
+Birds,wind,outside
+Birds chirping in foreground. Some wind noise.
+37°25'15.2"N 122°10'20.9"W
