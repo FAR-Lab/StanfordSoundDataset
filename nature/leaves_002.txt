@@ -1,0 +1,3 @@
+field,rustling,birds
+Manually rustling brush near microphone in a field. Some bird chirps in background.
+37°25'15.2"N 122°10'20.9"W
