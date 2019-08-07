@@ -1,4 +1,4 @@
-# StanfordSoundDataset
+# Stanford Sound Dataset
 Sounds collected at Stanford University from the CCRMA 2019 Summer Workshop on Neural Nets for Audio
 Data collected by workshop participants in the fieeld on August 5, 2019.
 
