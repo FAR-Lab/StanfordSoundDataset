@@ -4,9 +4,22 @@
 This is what the current directory tree for this dataset is:
 ````
 .
-├── LICENSE
-├── README.md
-├── footsteps
+├── Footsteps
+│   ├── Leaf_Crunch_001.HEIC
+│   ├── Leaf_Crunch_001.WAV
+│   ├── Leaf_Crunch_001.txt
+│   ├── Leaf_Crunch_002.HEIC
+│   ├── Leaf_Crunch_002.WAV
+│   ├── Leaf_Crunch_002.rtf
+│   ├── Leaf_Cutter_001.HEIC
+│   ├── Leaf_Cutter_001.WAV
+│   ├── Leaf_Cutter_001.txt
+│   ├── Leaves_Crunch_001.HEIC
+│   ├── Leaves_Crunch_001.WAV
+│   ├── Leaves_Crunch_001.rtf
+│   ├── Leaves_Crunch_002.HEIC
+│   ├── Leaves_Crunch_002.WAV
+│   ├── Leaves_Crunch_002.rtf
 │   ├── Stepping_on_leaves_001.WAV
 │   ├── Stepping_on_leaves_001.jpg
 │   ├── Stepping_on_leaves_001.txt
@@ -38,7 +51,7 @@ This is what the current directory tree for this dataset is:
 │   ├── footsteps_rodin_garden.png
 │   ├── footsteps_rodin_garden.text
 │   └── footsteps_rodin_gardin.wav
-├── fountains
+├── Fountains
 │   ├── Fountain1_01.mov
 │   ├── Fountain1_02.mov
 │   ├── Fountain1_03.mov
@@ -123,8 +136,15 @@ This is what the current directory tree for this dataset is:
 │   ├── Fountain_018.wav
 │   ├── Fountain_Children_001.WAV
 │   ├── Fountain_Children_001.jpg
-│   └── Fountain_Children_001.txt
-├── music
+│   ├── Fountain_Children_001.txt
+│   ├── Sculpture_Fountain_001.HEIC
+│   ├── Sculpture_Fountain_001.WAV
+│   ├── Sculpture_Fountain_001.rtf
+│   ├── Stately_Fountain_001.HEIC
+│   ├── Stately_Fountain_001.WAV
+│   └── Stately_Fountain_001.rtf
+├── LICENSE
+├── Music
 │   ├── Audition_in_room_001.WAV
 │   ├── Audition_in_room_001.jpg
 │   ├── Audition_in_room_001.txt
@@ -134,39 +154,15 @@ This is what the current directory tree for this dataset is:
 │   ├── Bikestore_Music_001.HEIC
 │   ├── Bikestore_Music_001.WAV
 │   ├── Bikestore_Music_001.rtf
-│   ├── Birds_001.HEIC
-│   ├── Birds_001.WAV
-│   ├── Birds_001.rtf
-│   ├── Bookstore_Ambience_001.HEIC
-│   ├── Bookstore_Ambience_001.WAV
-│   ├── Bookstore_Ambience_001.rtf
 │   ├── Bookstore_Jazz_001.HEIC
 │   ├── Bookstore_Jazz_001.WAV
 │   ├── Bookstore_Jazz_001.rtf
 │   ├── Car_Music_001.HEIC
 │   ├── Car_Music_001.WAV
 │   ├── Car_Music_001.txt
-│   ├── Car_Passing_001.HEIC
-│   ├── Car_Passing_001.WAV
-│   ├── Car_Passing_001.txt
-│   ├── Chair_Squeak_001.HEIC
-│   ├── Chair_Squeak_001.WAV
-│   ├── Chair_Squeak_001.rtf
-│   ├── Clapping_Staircase_001.HEIC
-│   ├── Clapping_Staircase_001.WAV
-│   ├── Clapping_Staircase_001.txt
-│   ├── Clapping_Staircase_002.HEIC
-│   ├── Clapping_Staircase_002.WAV
-│   ├── Clapping_Staircase_002.txt
 │   ├── Classroom_Music_001.JPG
 │   ├── Classroom_Music_001.WAV
 │   ├── Classroom_Music_001.rtf
-│   ├── Coffeehouse_Water_001.HEIC
-│   ├── Coffeehouse_Water_001.WAV
-│   ├── Coffeehouse_Water_001.rtf
-│   ├── Computer_Camp_001.HEIC
-│   ├── Computer_Camp_001.WAV
-│   ├── Computer_Camp_001.rtf
 │   ├── Disassembled_Piano_001.HEIC
 │   ├── Disassembled_Piano_001.WAV
 │   ├── Disassembled_Piano_001.rtf
@@ -197,33 +193,12 @@ This is what the current directory tree for this dataset is:
 │   ├── Flute_Vent_001.HEIC
 │   ├── Flute_Vent_001.WAV
 │   ├── Flute_Vent_001.txt
-│   ├── Foosball_001.HEIC
-│   ├── Foosball_001.WAV
-│   ├── Foosball_001.rtf
-│   ├── Garbage_Fan_001.HEIC
-│   ├── Garbage_Fan_001.WAV
-│   ├── Garbage_Fan_001.rtf
 │   ├── KZSU_001.HEIC
 │   ├── KZSU_001.WAV
 │   ├── KZSU_001.rtf
 │   ├── KZSU_002.HEIC
 │   ├── KZSU_002.WAV
 │   ├── KZSU_002.rtf
-│   ├── Leaf_Cruch_001.HEIC
-│   ├── Leaf_Cruch_001.WAV
-│   ├── Leaf_Cruch_001.rtf
-│   ├── Leaf_Crunch_001.HEIC
-│   ├── Leaf_Crunch_001.WAV
-│   ├── Leaf_Crunch_001.txt
-│   ├── Leaf_Cutter_001.HEIC
-│   ├── Leaf_Cutter_001.WAV
-│   ├── Leaf_Cutter_001.txt
-│   ├── Leaves_Crunch_001.HEIC
-│   ├── Leaves_Crunch_001.WAV
-│   ├── Leaves_Crunch_001.rtf
-│   ├── Leaves_Crunch_002.HEIC
-│   ├── Leaves_Crunch_002.WAV
-│   ├── Leaves_Crunch_002.rtf
 │   ├── Metal_Sounds_001.HEIC
 │   ├── Metal_Sounds_001.WAV
 │   ├── Metal_Sounds_001.txt
@@ -269,12 +244,6 @@ This is what the current directory tree for this dataset is:
 │   ├── Piano_Slam_002.HEIC
 │   ├── Piano_Slam_002.WAV
 │   ├── Piano_Slam_002.txt
-│   ├── Sculpture_Fountain_001.HEIC
-│   ├── Sculpture_Fountain_001.WAV
-│   ├── Sculpture_Fountain_001.rtf
-│   ├── Signs_001.HEIC
-│   ├── Signs_001.WAV
-│   ├── Signs_001.rtf
 │   ├── Singing_001.HEIC
 │   ├── Singing_001.WAV
 │   ├── Singing_001.rtf
@@ -290,9 +259,6 @@ This is what the current directory tree for this dataset is:
 │   ├── Starbucks_Music_003.HEIC
 │   ├── Starbucks_Music_003.WAV
 │   ├── Starbucks_Music_003.txt
-│   ├── Stately_Fountain_001.HEIC
-│   ├── Stately_Fountain_001.WAV
-│   ├── Stately_Fountain_001.rtf
 │   ├── Steel_Drum_001.HEIC
 │   ├── Steel_Drum_001.WAV
 │   ├── Steel_Drum_001.rtf
@@ -311,19 +277,6 @@ This is what the current directory tree for this dataset is:
 │   ├── Sytnth_Drum_001.HEIC
 │   ├── Sytnth_Drum_001.WAV
 │   ├── Sytnth_Drum_001.rtf
-│   ├── Treehouse_TV_001.HEIC
-│   ├── Treehouse_TV_001.WAV
-│   ├── Treehouse_TV_001.rtf
-│   ├── Treehouse_TV_002.HEIC
-│   ├── Treehouse_TV_002.WAV
-│   ├── Treehouse_TV_002.rtf
-│   ├── Tressider_Ambience_001.HEIC
-│   ├── Tressider_Ambience_001.WAV
-│   ├── Tressider_Ambience_001.txt
-│   ├── Ventilator_001.HEIC
-│   ├── Ventilator_001.WAV
-│   ├── Ventilator_001.txt
-│   ├── Ventilator_002.WAV
 │   ├── Violin_001.HEIC
 │   ├── Violin_001.WAV
 │   ├── Violin_001.txt
@@ -353,8 +306,14 @@ This is what the current directory tree for this dataset is:
 │   ├── Xylo_001.rtf
 │   ├── Xylo_002.HEIC
 │   ├── Xylo_002.WAV
-│   └── Xylo_002.rtf
-├── nature
+│   ├── Xylo_002.rtf
+│   ├── music_001.txt
+│   ├── music_001.wav
+│   ├── music_002.txt
+│   └── music_002.wav
+├── Nature
+│   ├── Birds_001.HEIC
+│   ├── Birds_001.rtf
 │   ├── IMG_1425.JPG
 │   ├── IMG_1426.JPG
 │   ├── IMG_1427.JPG
@@ -414,20 +373,57 @@ This is what the current directory tree for this dataset is:
 │   ├── nature_001.wav
 │   ├── nature_002.txt
 │   └── nature_002.wav
-├── stanford-other
+├── README.md
+├── Stanford-Other
+│   ├── Bookstore_Ambience_001.HEIC
+│   ├── Bookstore_Ambience_001.WAV
+│   ├── Bookstore_Ambience_001.rtf
+│   ├── Chair_Squeak_001.HEIC
+│   ├── Chair_Squeak_001.WAV
+│   ├── Chair_Squeak_001.rtf
 │   ├── Children_chatting_001.WAV
 │   ├── Children_chatting_001.jpg
 │   ├── Children_chatting_001.txt
+│   ├── Clapping_Staircase_001.HEIC
+│   ├── Clapping_Staircase_001.WAV
+│   ├── Clapping_Staircase_001.txt
+│   ├── Clapping_Staircase_002.HEIC
+│   ├── Clapping_Staircase_002.WAV
+│   ├── Clapping_Staircase_002.txt
+│   ├── Coffeehouse_Water_001.HEIC
+│   ├── Coffeehouse_Water_001.WAV
+│   ├── Coffeehouse_Water_001.rtf
+│   ├── Computer_Camp_001.HEIC
+│   ├── Computer_Camp_001.WAV
+│   ├── Computer_Camp_001.rtf
+│   ├── Foosball_001.HEIC
+│   ├── Foosball_001.WAV
+│   ├── Foosball_001.rtf
+│   ├── Garbage_Fan_001.HEIC
+│   ├── Garbage_Fan_001.WAV
+│   ├── Garbage_Fan_001.rtf
+│   ├── Signs_001.HEIC
+│   ├── Signs_001.WAV
+│   ├── Signs_001.rtf
+│   ├── Treehouse_TV_001.HEIC
+│   ├── Treehouse_TV_001.WAV
+│   ├── Treehouse_TV_001.rtf
+│   ├── Treehouse_TV_002.HEIC
+│   ├── Treehouse_TV_002.WAV
+│   ├── Treehouse_TV_002.rtf
+│   ├── Tressider_Ambience_001.HEIC
+│   ├── Tressider_Ambience_001.WAV
+│   ├── Tressider_Ambience_001.txt
+│   ├── Ventilator_001.HEIC
+│   ├── Ventilator_001.WAV
+│   ├── Ventilator_001.txt
+│   ├── Ventilator_002.WAV
 │   ├── kids_playing_001.txt
 │   ├── kids_playing_001.wav
-│   ├── music_001.txt
-│   ├── music_001.wav
-│   ├── music_002.txt
-│   ├── music_002.wav
 │   ├── water_sprinkler_001.jpg
 │   ├── water_sprinkler_001.txt
 │   └── water_sprinkler_001.wav
-└── vehicles
+└── Vehicles
     ├── CarAudioInside&Outside
     │   ├── CarAcceleration001.txt
     │   ├── CarAcceleration001.wav
@@ -541,6 +537,9 @@ This is what the current directory tree for this dataset is:
     │   ├── InCar017.wav
     │   ├── InCar018.txt
     │   └── InCar018.wav
+    ├── Car_Passing_001.HEIC
+    ├── Car_Passing_001.WAV
+    ├── Car_Passing_001.txt
     ├── CarsPassing
     │   ├── 0013CarsPassing.WAV
     │   ├── 0014CarsPassing.WAV
@@ -551,6 +550,9 @@ This is what the current directory tree for this dataset is:
     │   ├── 0019CarsPassing.WAV
     │   ├── 0020CarsPassing.WAV
     │   ├── 0021CarsPassing.WAV
+    │   ├── Car_Passing_001.HEIC
+    │   ├── Car_Passing_001.WAV
+    │   ├── Car_Passing_001.txt
     │   └── CarsPassing.rtf
     ├── bicycles
     │   ├── BikeAir_001.txt
