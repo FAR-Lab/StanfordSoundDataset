@@ -1,3 +1,0 @@
-ventilator, fan, Dinkelspiel
-A ventilator running at the Dinkelspiel center
-37° 25' 26.7" N 122° 10' 13.338" W

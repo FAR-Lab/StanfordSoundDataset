@@ -1,5 +1,0 @@
-Bikes_06.txt
-
-tags: bikes, stanford, urbansounds
-
-description: bike repair shop

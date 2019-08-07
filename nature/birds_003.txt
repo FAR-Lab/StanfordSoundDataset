@@ -1,3 +1,0 @@
-birds,wind,voices
-Bird chirps in foreground. Some microphone wind noise. Some distant voices.
-37°25'15.2"N 122°10'20.9"W

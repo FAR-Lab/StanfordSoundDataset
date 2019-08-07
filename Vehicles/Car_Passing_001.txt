@@ -1,0 +1,3 @@
+car, road, passing
+A car passing on the road to the back of the group
+37° 25' 19.74" N 122° 10' 21.66" W

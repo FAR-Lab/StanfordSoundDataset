@@ -1,3 +1,0 @@
-birds,wind,traffic
-Birds chirping in foreground with microphone wind noise. Some car traffic noise in background.
-37°25'15.2"N 122°10'20.9"W

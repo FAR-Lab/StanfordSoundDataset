@@ -1,4 +1,0 @@
-1. Car acceleration
-2. This is the sound of a random car on street trying to start it engine.
-3.Latitude:37° 25' 26.202" N
-Longitude:122° 10' 10.116" W
