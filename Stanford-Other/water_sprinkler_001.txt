@@ -1,0 +1,3 @@
+sprinkler,voices,outside
+Water sprinkler spraying. Voices in background.
+37° 25' 9.78" N, 122° 10' 26.112" W
