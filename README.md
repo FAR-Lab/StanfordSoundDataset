@@ -1,2 +1,678 @@
 # StanfordSoundDataset
   Updated 39 seconds ago Sounds collected at Stanford University from the CCRMA 2019 Summer Workshop on Neural Nets for Audio
+
+This is what the current directory tree for this dataset is:
+````
+.
+├── LICENSE
+├── README.md
+├── footsteps
+│   ├── Stepping_on_leaves_001.WAV
+│   ├── Stepping_on_leaves_001.jpg
+│   ├── Stepping_on_leaves_001.txt
+│   ├── Stepping_on_leaves_002.WAV
+│   ├── Stepping_on_leaves_002.jpg
+│   ├── Stepping_on_leaves_002.txt
+│   ├── Stepping_on_stair.jpg
+│   ├── Stepping_on_stairs.WAV
+│   ├── Stepping_on_stairs.txt
+│   ├── footsteps_bookstore_cafe.png
+│   ├── footsteps_bookstore_cafe.text
+│   ├── footsteps_bookstore_cafe.wav
+│   ├── footsteps_church.png
+│   ├── footsteps_church.text
+│   ├── footsteps_church.wav
+│   ├── footsteps_engineering_tree.png
+│   ├── footsteps_engineering_tree.text
+│   ├── footsteps_engineering_tree.wav
+│   ├── footsteps_maill.png
+│   ├── footsteps_main_quad_halls.png
+│   ├── footsteps_main_quad_halls.text
+│   ├── footsteps_main_quad_halls_1.wav
+│   ├── footsteps_main_quad_halls_2.wav
+│   ├── footsteps_mall.text
+│   ├── footsteps_mall.wav
+│   ├── footsteps_off_path.png
+│   ├── footsteps_off_path.text
+│   ├── footsteps_off_path.wav
+│   ├── footsteps_rodin_garden.png
+│   ├── footsteps_rodin_garden.text
+│   └── footsteps_rodin_gardin.wav
+├── fountains
+│   ├── Fountain1_01.mov
+│   ├── Fountain1_02.mov
+│   ├── Fountain1_03.mov
+│   ├── Fountain1_rec_01.m4a
+│   ├── Fountain1_rec_02.m4a
+│   ├── Fountain2_001.WAV
+│   ├── Fountain2_001.jpg
+│   ├── Fountain2_001.txt
+│   ├── Fountain2_002.WAV
+│   ├── Fountain2_002.jpg
+│   ├── Fountain2_002.txt
+│   ├── Fountain2_003.WAV
+│   ├── Fountain2_003.jpg
+│   ├── Fountain2_003.txt
+│   ├── Fountain2_004.WAV
+│   ├── Fountain2_004.jpg
+│   ├── Fountain2_004.txt
+│   ├── Fountain2_01.mov
+│   ├── Fountain2_02.mov
+│   ├── Fountain2_03.mov
+│   ├── Fountain2_rec.m4a
+│   ├── Fountain3_01.mov
+│   ├── Fountain3_02.mov
+│   ├── Fountain3_03.mov
+│   ├── Fountain3_rec.m4a
+│   ├── Fountain4_01.mov
+│   ├── Fountain4_02.mov
+│   ├── Fountain4_rec.m4a
+│   ├── Fountain_001.jpg
+│   ├── Fountain_001.text
+│   ├── Fountain_001.wav
+│   ├── Fountain_002.jpg
+│   ├── Fountain_002.text
+│   ├── Fountain_002.wav
+│   ├── Fountain_003.jpg
+│   ├── Fountain_003.text
+│   ├── Fountain_003.wav
+│   ├── Fountain_004.jpg
+│   ├── Fountain_004.text
+│   ├── Fountain_004.wav
+│   ├── Fountain_005.jpg
+│   ├── Fountain_005.text
+│   ├── Fountain_005.wav
+│   ├── Fountain_006.jpg
+│   ├── Fountain_006.text
+│   ├── Fountain_006.wav
+│   ├── Fountain_007.jpg
+│   ├── Fountain_007.text
+│   ├── Fountain_007.wav
+│   ├── Fountain_008.jpg
+│   ├── Fountain_008.text
+│   ├── Fountain_008.wav
+│   ├── Fountain_009.jpg
+│   ├── Fountain_009.text
+│   ├── Fountain_009.wav
+│   ├── Fountain_010.jpg
+│   ├── Fountain_010.text
+│   ├── Fountain_010.wav
+│   ├── Fountain_011.jpg
+│   ├── Fountain_011.text
+│   ├── Fountain_011.wav
+│   ├── Fountain_012.jpg
+│   ├── Fountain_012.text
+│   ├── Fountain_012.wav
+│   ├── Fountain_013.jpg
+│   ├── Fountain_013.text
+│   ├── Fountain_013.wav
+│   ├── Fountain_014.jpg
+│   ├── Fountain_014.text
+│   ├── Fountain_014.wav
+│   ├── Fountain_015.jpg
+│   ├── Fountain_015.text
+│   ├── Fountain_015.wav
+│   ├── Fountain_016.jpg
+│   ├── Fountain_016.text
+│   ├── Fountain_016.wav
+│   ├── Fountain_017.jpg
+│   ├── Fountain_017.text
+│   ├── Fountain_017.wav
+│   ├── Fountain_018.jpg
+│   ├── Fountain_018.text
+│   ├── Fountain_018.wav
+│   ├── Fountain_Children_001.WAV
+│   ├── Fountain_Children_001.jpg
+│   └── Fountain_Children_001.txt
+├── music
+│   ├── Audition_in_room_001.WAV
+│   ├── Audition_in_room_001.jpg
+│   ├── Audition_in_room_001.txt
+│   ├── Axe\ and\ Palm_Music_001.HEIC
+│   ├── Axe\ and\ Palm_Music_001.WAV
+│   ├── Axe\ and\ Palm_Music_001.txt
+│   ├── Bikestore_Music_001.HEIC
+│   ├── Bikestore_Music_001.WAV
+│   ├── Bikestore_Music_001.rtf
+│   ├── Birds_001.HEIC
+│   ├── Birds_001.WAV
+│   ├── Birds_001.rtf
+│   ├── Bookstore_Ambience_001.HEIC
+│   ├── Bookstore_Ambience_001.WAV
+│   ├── Bookstore_Ambience_001.rtf
+│   ├── Bookstore_Jazz_001.HEIC
+│   ├── Bookstore_Jazz_001.WAV
+│   ├── Bookstore_Jazz_001.rtf
+│   ├── Car_Music_001.HEIC
+│   ├── Car_Music_001.WAV
+│   ├── Car_Music_001.txt
+│   ├── Car_Passing_001.HEIC
+│   ├── Car_Passing_001.WAV
+│   ├── Car_Passing_001.txt
+│   ├── Chair_Squeak_001.HEIC
+│   ├── Chair_Squeak_001.WAV
+│   ├── Chair_Squeak_001.rtf
+│   ├── Clapping_Staircase_001.HEIC
+│   ├── Clapping_Staircase_001.WAV
+│   ├── Clapping_Staircase_001.txt
+│   ├── Clapping_Staircase_002.HEIC
+│   ├── Clapping_Staircase_002.WAV
+│   ├── Clapping_Staircase_002.txt
+│   ├── Classroom_Music_001.JPG
+│   ├── Classroom_Music_001.WAV
+│   ├── Classroom_Music_001.rtf
+│   ├── Coffeehouse_Water_001.HEIC
+│   ├── Coffeehouse_Water_001.WAV
+│   ├── Coffeehouse_Water_001.rtf
+│   ├── Computer_Camp_001.HEIC
+│   ├── Computer_Camp_001.WAV
+│   ├── Computer_Camp_001.rtf
+│   ├── Disassembled_Piano_001.HEIC
+│   ├── Disassembled_Piano_001.WAV
+│   ├── Disassembled_Piano_001.rtf
+│   ├── Disassembled_Piano_002.HEIC
+│   ├── Disassembled_Piano_002.WAV
+│   ├── Disassembled_Piano_002.rtf
+│   ├── Disassembled_Piano_003.HEIC
+│   ├── Disassembled_Piano_003.WAV
+│   ├── Disassembled_Piano_003.rtf
+│   ├── Dorm_Music_001.HEIC
+│   ├── Dorm_Music_001.WAV
+│   ├── Dorm_Music_001.txt
+│   ├── Drums_001.HEIC
+│   ├── Drums_001.WAV
+│   ├── Drums_001.rtf
+│   ├── FM_Synth_001.HEIC
+│   ├── FM_Synth_001.WAV
+│   ├── FM_Synth_001.rtf
+│   ├── FM_Synth_002.HEIC
+│   ├── FM_Synth_002.WAV
+│   ├── FM_Synth_002.rtf
+│   ├── Flute_Distance_001.HEIC
+│   ├── Flute_Distance_001.WAV
+│   ├── Flute_Distance_001.txt
+│   ├── Flute_Dorm_001.HEIC
+│   ├── Flute_Dorm_001.WAV
+│   ├── Flute_Dorm_001.txt
+│   ├── Flute_Vent_001.HEIC
+│   ├── Flute_Vent_001.WAV
+│   ├── Flute_Vent_001.txt
+│   ├── Foosball_001.HEIC
+│   ├── Foosball_001.WAV
+│   ├── Foosball_001.rtf
+│   ├── Garbage_Fan_001.HEIC
+│   ├── Garbage_Fan_001.WAV
+│   ├── Garbage_Fan_001.rtf
+│   ├── KZSU_001.HEIC
+│   ├── KZSU_001.WAV
+│   ├── KZSU_001.rtf
+│   ├── KZSU_002.HEIC
+│   ├── KZSU_002.WAV
+│   ├── KZSU_002.rtf
+│   ├── Leaf_Cruch_001.HEIC
+│   ├── Leaf_Cruch_001.WAV
+│   ├── Leaf_Cruch_001.rtf
+│   ├── Leaf_Crunch_001.HEIC
+│   ├── Leaf_Crunch_001.WAV
+│   ├── Leaf_Crunch_001.txt
+│   ├── Leaf_Cutter_001.HEIC
+│   ├── Leaf_Cutter_001.WAV
+│   ├── Leaf_Cutter_001.txt
+│   ├── Leaves_Crunch_001.HEIC
+│   ├── Leaves_Crunch_001.WAV
+│   ├── Leaves_Crunch_001.rtf
+│   ├── Leaves_Crunch_002.HEIC
+│   ├── Leaves_Crunch_002.WAV
+│   ├── Leaves_Crunch_002.rtf
+│   ├── Metal_Sounds_001.HEIC
+│   ├── Metal_Sounds_001.WAV
+│   ├── Metal_Sounds_001.txt
+│   ├── Misc_Percussion_001.HEIC
+│   ├── Misc_Percussion_001.WAV
+│   ├── Misc_Percussion_001.rtf
+│   ├── Misc_Percussion_002.HEIC
+│   ├── Misc_Percussion_002.WAV
+│   ├── Misc_Percussion_002.rtf
+│   ├── Orchestra_001.HEIC
+│   ├── Orchestra_001.WAV
+│   ├── Orchestra_001.txt
+│   ├── Piano_001.HEIC
+│   ├── Piano_001.WAV
+│   ├── Piano_001.txt
+│   ├── Piano_002.HEIC
+│   ├── Piano_002.WAV
+│   ├── Piano_002.txt
+│   ├── Piano_Counterpoint_001.HEIC
+│   ├── Piano_Counterpoint_001.WAV
+│   ├── Piano_Counterpoint_001.txt
+│   ├── Piano_Jazz_001.HEIC
+│   ├── Piano_Jazz_001.WAV
+│   ├── Piano_Jazz_001.txt
+│   ├── Piano_Jazz_002.HEIC
+│   ├── Piano_Jazz_002.WAV
+│   ├── Piano_Jazz_002.txt
+│   ├── Piano_Run_001.HEIC
+│   ├── Piano_Run_001.WAV
+│   ├── Piano_Run_001.txt
+│   ├── Piano_Run_002.HEIC
+│   ├── Piano_Run_002.WAV
+│   ├── Piano_Run_002.txt
+│   ├── Piano_Run_003.HEIC
+│   ├── Piano_Run_003.WAV
+│   ├── Piano_Run_003.txt
+│   ├── Piano_Run_004.HEIC
+│   ├── Piano_Run_004.WAV
+│   ├── Piano_Run_004.txt
+│   ├── Piano_Slam_001.HEIC
+│   ├── Piano_Slam_001.WAV
+│   ├── Piano_Slam_001.txt
+│   ├── Piano_Slam_002.HEIC
+│   ├── Piano_Slam_002.WAV
+│   ├── Piano_Slam_002.txt
+│   ├── Sculpture_Fountain_001.HEIC
+│   ├── Sculpture_Fountain_001.WAV
+│   ├── Sculpture_Fountain_001.rtf
+│   ├── Signs_001.HEIC
+│   ├── Signs_001.WAV
+│   ├── Signs_001.rtf
+│   ├── Singing_001.HEIC
+│   ├── Singing_001.WAV
+│   ├── Singing_001.rtf
+│   ├── Singing_002.HEIC
+│   ├── Singing_002.WAV
+│   ├── Singing_002.rtf
+│   ├── Starbucks_Music_001.HEIC
+│   ├── Starbucks_Music_001.WAV
+│   ├── Starbucks_Music_001.txt
+│   ├── Starbucks_Music_002.HEIC
+│   ├── Starbucks_Music_002.WAV
+│   ├── Starbucks_Music_002.txt
+│   ├── Starbucks_Music_003.HEIC
+│   ├── Starbucks_Music_003.WAV
+│   ├── Starbucks_Music_003.txt
+│   ├── Stately_Fountain_001.HEIC
+│   ├── Stately_Fountain_001.WAV
+│   ├── Stately_Fountain_001.rtf
+│   ├── Steel_Drum_001.HEIC
+│   ├── Steel_Drum_001.WAV
+│   ├── Steel_Drum_001.rtf
+│   ├── Studio_Drum_001.HEIC
+│   ├── Studio_Drum_001.WAV
+│   ├── Studio_Drum_001.rtf
+│   ├── Synth_Jam_001.HEIC
+│   ├── Synth_Jam_001.WAV
+│   ├── Synth_Jam_001.rtf
+│   ├── Synth_Jam_002.HEIC
+│   ├── Synth_Jam_002.WAV
+│   ├── Synth_Jam_002.rtf
+│   ├── Synth_Jam_003.HEIC
+│   ├── Synth_Jam_003.WAV
+│   ├── Synth_Jam_003.rtf
+│   ├── Sytnth_Drum_001.HEIC
+│   ├── Sytnth_Drum_001.WAV
+│   ├── Sytnth_Drum_001.rtf
+│   ├── Treehouse_TV_001.HEIC
+│   ├── Treehouse_TV_001.WAV
+│   ├── Treehouse_TV_001.rtf
+│   ├── Treehouse_TV_002.HEIC
+│   ├── Treehouse_TV_002.WAV
+│   ├── Treehouse_TV_002.rtf
+│   ├── Tressider_Ambience_001.HEIC
+│   ├── Tressider_Ambience_001.WAV
+│   ├── Tressider_Ambience_001.txt
+│   ├── Ventilator_001.HEIC
+│   ├── Ventilator_001.WAV
+│   ├── Ventilator_001.txt
+│   ├── Ventilator_002.WAV
+│   ├── Violin_001.HEIC
+│   ├── Violin_001.WAV
+│   ├── Violin_001.txt
+│   ├── Violin_002.HEIC
+│   ├── Violin_002.WAV
+│   ├── Violin_002.txt
+│   ├── Violin_003.HEIC
+│   ├── Violin_003.WAV
+│   ├── Violin_003.txt
+│   ├── Violin_004.HEIC
+│   ├── Violin_004.WAV
+│   ├── Violin_004.txt
+│   ├── Violin_005.HEIC
+│   ├── Violin_005.WAV
+│   ├── Violin_005.txt
+│   ├── Violin_006.HEIC
+│   ├── Violin_006.WAV
+│   ├── Violin_006.txt
+│   ├── Violin_007.HEIC
+│   ├── Violin_007.WAV
+│   ├── Violin_007.txt
+│   ├── Violin_Cello_001.HEIC
+│   ├── Violin_Cello_001.WAV
+│   ├── Violin_Cello_001.txt
+│   ├── Xylo_001.HEIC
+│   ├── Xylo_001.WAV
+│   ├── Xylo_001.rtf
+│   ├── Xylo_002.HEIC
+│   ├── Xylo_002.WAV
+│   └── Xylo_002.rtf
+├── nature
+│   ├── IMG_1425.JPG
+│   ├── IMG_1426.JPG
+│   ├── IMG_1427.JPG
+│   ├── IMG_1428.JPG
+│   ├── IMG_1429.JPG
+│   ├── IMG_1430.JPG
+│   ├── IMG_1431.JPG
+│   ├── IMG_1432.JPG
+│   ├── IMG_1433.JPG
+│   ├── IMG_1434.JPG
+│   ├── IMG_1435.JPG
+│   ├── IMG_1436.JPG
+│   ├── IMG_1437.JPG
+│   ├── IMG_1438.JPG
+│   ├── IMG_1444.jpg
+│   ├── IMG_1445.jpg
+│   ├── IMG_1446.jpg
+│   ├── IMG_1447.jpg
+│   ├── IMG_1448.JPG
+│   ├── IMG_1449.JPG
+│   ├── IMG_1450.JPG
+│   ├── IMG_1451.JPG
+│   ├── IMG_1452.JPG
+│   ├── IMG_1453.JPG
+│   ├── IMG_1454.JPG
+│   ├── IMG_1455.JPG
+│   ├── IMG_1456.JPG
+│   ├── IMG_1457.JPG
+│   ├── IMG_1460.JPG
+│   ├── IMG_1461.JPG
+│   ├── IMG_1462.MOV
+│   ├── IMG_1463.JPG
+│   ├── IMG_1464.JPG
+│   ├── IMG_1465.JPG
+│   ├── IMG_1466.JPG
+│   ├── IMG_1467.JPG
+│   ├── IMG_1469.JPG
+│   ├── IMG_1470.JPG
+│   ├── IMG_1471.JPG
+│   ├── birds_001.txt
+│   ├── birds_001.wav
+│   ├── birds_002.txt
+│   ├── birds_002.wav
+│   ├── birds_003.txt
+│   ├── birds_003.wav
+│   ├── birds_004.txt
+│   ├── birds_004.wav
+│   ├── birds_005.txt
+│   ├── birds_005.wav
+│   ├── birds_006.txt
+│   ├── birds_006.wav
+│   ├── leaves_001.txt
+│   ├── leaves_001.wav
+│   ├── leaves_002.txt
+│   ├── leaves_002.wav
+│   ├── nature_001.txt
+│   ├── nature_001.wav
+│   ├── nature_002.txt
+│   └── nature_002.wav
+├── stanford-other
+│   ├── Children_chatting_001.WAV
+│   ├── Children_chatting_001.jpg
+│   ├── Children_chatting_001.txt
+│   ├── kids_playing_001.txt
+│   ├── kids_playing_001.wav
+│   ├── music_001.txt
+│   ├── music_001.wav
+│   ├── music_002.txt
+│   ├── music_002.wav
+│   ├── water_sprinkler_001.jpg
+│   ├── water_sprinkler_001.txt
+│   └── water_sprinkler_001.wav
+└── vehicles
+    ├── CarAudioInside&Outside
+    │   ├── CarAcceleration001.txt
+    │   ├── CarAcceleration001.wav
+    │   ├── CarAcceleration002.txt
+    │   ├── CarAcceleration002.wav
+    │   ├── carAcceleratingIndoor1.txt
+    │   ├── carAcceleratingIndoor1.wav
+    │   ├── carAudio2.txt
+    │   ├── carAudio2.wav
+    │   ├── carAudio3.txt
+    │   ├── carAudio3.wav
+    │   ├── carAudioLong1.txt
+    │   ├── carAudioLong1.wav
+    │   ├── carBlinker1.txt
+    │   ├── carBlinker1.wav
+    │   ├── carBlinker2.txt
+    │   ├── carBlinker2.wav
+    │   ├── carBraking1.txt
+    │   ├── carBraking1.wav
+    │   ├── carIdle1.txt
+    │   ├── carIdle1.wav
+    │   ├── carIdle2.txt
+    │   ├── carIdle2.wav
+    │   ├── carPassing4.txt
+    │   ├── carPassing4.wav
+    │   ├── carPassing5.txt
+    │   ├── carPassing5.wav
+    │   ├── carShift1.txt
+    │   ├── carShift1.wav
+    │   ├── carShiftingGears1.txt
+    │   ├── carShiftingGears1.wav
+    │   ├── carVroom1.txt
+    │   ├── carVroom1.wav
+    │   ├── carVroom2.txt
+    │   ├── carVroom2.wav
+    │   ├── carsAccelerating1.txt
+    │   ├── carsAccelerating1.wav
+    │   ├── inCarAudioLong1.txt
+    │   ├── inCarAudioLong1.wav
+    │   ├── multipleCarsPassing1.txt
+    │   ├── multipleCarsPassing1.wav
+    │   ├── multipleCarsPassing2.txt
+    │   ├── multipleCarsPassing2.wav
+    │   ├── multipleCarsPassing3.txt
+    │   └── multipleCarsPassing3.wav
+    ├── CarEngineRev
+    │   ├── 0008CarEngineRev.WAV
+    │   ├── 0008CarEngineRev.txt
+    │   ├── CarVroom001.txt
+    │   ├── CarVroom001.wav
+    │   ├── CarVroom002.txt
+    │   ├── CarVroom002.wav
+    │   ├── CarVroom003.txt
+    │   ├── CarVroom003.wav
+    │   ├── CarVroom004.txt
+    │   ├── CarVroom004.wav
+    │   ├── CarVroom005.txt
+    │   ├── CarVroom005.wav
+    │   ├── CarVroom006.txt
+    │   ├── CarVroom006.wav
+    │   ├── CarVroom007.txt
+    │   ├── CarVroom007.wav
+    │   ├── CarVroom008.txt
+    │   ├── CarVroom008.wav
+    │   ├── Car_acceleration_001.WAV
+    │   ├── Car_acceleration_001.jpg
+    │   └── Car_acceleration_001.txt
+    ├── CarInside
+    │   ├── 0009CarInside.WAV
+    │   ├── 0009CarInside.txt
+    │   ├── 0010CarInside.WAV
+    │   ├── 0010CarInside.txt
+    │   ├── 0011CarInside.WAV
+    │   ├── 0011CarInside.txt
+    │   ├── 0012CarInside.WAV
+    │   ├── 0012CarInside.txt
+    │   ├── CarInside.rtf
+    │   ├── InCar001.txt
+    │   ├── InCar001.wav
+    │   ├── InCar002.txt
+    │   ├── InCar002.wav
+    │   ├── InCar003.txt
+    │   ├── InCar003.wav
+    │   ├── InCar004.txt
+    │   ├── InCar004.wav
+    │   ├── InCar005.txt
+    │   ├── InCar005.wav
+    │   ├── InCar006.txt
+    │   ├── InCar006.wav
+    │   ├── InCar007.txt
+    │   ├── InCar007.wav
+    │   ├── InCar008.txt
+    │   ├── InCar008.wav
+    │   ├── InCar009.txt
+    │   ├── InCar009.wav
+    │   ├── InCar010.txt
+    │   ├── InCar010.wav
+    │   ├── InCar011.txt
+    │   ├── InCar011.wav
+    │   ├── InCar012.txt
+    │   ├── InCar012.wav
+    │   ├── InCar013.txt
+    │   ├── InCar013.wav
+    │   ├── InCar014.txt
+    │   ├── InCar014.wav
+    │   ├── InCar015.txt
+    │   ├── InCar015.wav
+    │   ├── InCar016.txt
+    │   ├── InCar016.wav
+    │   ├── InCar017.txt
+    │   ├── InCar017.wav
+    │   ├── InCar018.txt
+    │   └── InCar018.wav
+    ├── CarsPassing
+    │   ├── 0013CarsPassing.WAV
+    │   ├── 0014CarsPassing.WAV
+    │   ├── 0015CarsPassing.WAV
+    │   ├── 0016CarsPassing.WAV
+    │   ├── 0017BusPassing.WAV
+    │   ├── 0018CarsPassing.WAV
+    │   ├── 0019CarsPassing.WAV
+    │   ├── 0020CarsPassing.WAV
+    │   ├── 0021CarsPassing.WAV
+    │   └── CarsPassing.rtf
+    ├── bicycles
+    │   ├── BikeAir_001.txt
+    │   ├── BikeAir_001.wav
+    │   ├── BikeWheel_001.txt
+    │   ├── BikeWheel_001.wav
+    │   ├── BikeWheel_002.txt
+    │   ├── BikeWheel_002.wav
+    │   ├── BikeWheel_003.txt
+    │   ├── BikeWheel_003.wav
+    │   ├── BikeWheel_004.txt
+    │   ├── BikeWheel_004.wav
+    │   ├── BikeWheel_005.txt
+    │   ├── BikeWheel_005.wav
+    │   ├── Bikes.rtf
+    │   ├── Bikes_01.WAV
+    │   ├── Bikes_01.jpg
+    │   ├── Bikes_01.txt
+    │   ├── Bikes_02.WAV
+    │   ├── Bikes_02.jpg
+    │   ├── Bikes_02.txt
+    │   ├── Bikes_03.WAV
+    │   ├── Bikes_03.jpg
+    │   ├── Bikes_03.txt
+    │   ├── Bikes_04.WAV
+    │   ├── Bikes_04.jpg
+    │   ├── Bikes_04.txt
+    │   ├── Bikes_05.WAV
+    │   ├── Bikes_05.jpg
+    │   ├── Bikes_05.txt
+    │   ├── Bikes_06.WAV
+    │   ├── Bikes_06.jpg
+    │   ├── Bikes_06.txt
+    │   ├── Bikes_07.WAV
+    │   ├── Bikes_07.jpg
+    │   ├── Bikes_07.txt
+    │   ├── Bikes_08.WAV
+    │   ├── Bikes_08.jpg
+    │   ├── Bikes_08.txt
+    │   ├── Bikes_09.WAV
+    │   ├── Bikes_09.jpg
+    │   ├── Bikes_09.txt
+    │   ├── Bikes_10.WAV
+    │   ├── Bikes_10.jpg
+    │   ├── Bikes_10.txt
+    │   ├── Bikes_11.WAV
+    │   ├── Bikes_11.jpg
+    │   ├── Bikes_11.txt
+    │   ├── Bikes_12.WAV
+    │   ├── Bikes_12.jpg
+    │   ├── Bikes_12.txt
+    │   ├── Bikes_13.WAV
+    │   ├── Bikes_13.jpg
+    │   ├── Bikes_13.txt
+    │   ├── Bikes_14.WAV
+    │   ├── Bikes_14.jpg
+    │   ├── Bikes_14.txt
+    │   ├── Bikes_15.WAV
+    │   ├── Bikes_15.jpg
+    │   ├── Bikes_15.txt
+    │   ├── Bikes_16.WAV
+    │   ├── Bikes_16.jpg
+    │   ├── Bikes_16.txt
+    │   ├── Bikes_17.WAV
+    │   ├── Bikes_17.jpg
+    │   ├── Bikes_17.txt
+    │   ├── Bikes_18.WAV
+    │   ├── Bikes_18.jpg
+    │   ├── Bikes_18.txt
+    │   ├── Bikes_19.WAV
+    │   ├── Bikes_19.jpg
+    │   ├── Bikes_19.txt
+    │   ├── Bikes_20.WAV
+    │   ├── Bikes_20.jpg
+    │   ├── Bikes_20.txt
+    │   ├── Bikes_21.WAV
+    │   ├── Bikes_21.jpg
+    │   ├── Bikes_21.txt
+    │   ├── Bikes_22.WAV
+    │   ├── Bikes_22.jpg
+    │   ├── Bikes_22.txt
+    │   ├── Bikes_23.WAV
+    │   ├── Bikes_23.jpg
+    │   ├── Bikes_23.txt
+    │   ├── Bikes_24.WAV
+    │   ├── Bikes_24.jpg
+    │   ├── Bikes_24.txt
+    │   ├── Bikes_25.WAV
+    │   ├── Bikes_25.jpg
+    │   └── Bikes_25.txt
+    └── traffic
+        ├── Traffic001.txt
+        ├── Traffic001.wav
+        ├── Traffic002.txt
+        ├── Traffic002.wav
+        ├── Traffic003.txt
+        ├── Traffic003.wav
+        ├── Traffic004.txt
+        ├── Traffic004.wav
+        ├── Traffic005.txt
+        ├── Traffic005.wav
+        ├── Traffic006.txt
+        ├── Traffic006.wav
+        ├── Traffic007.txt
+        ├── Traffic007.wav
+        ├── Traffic008.txt
+        ├── Traffic008.wav
+        ├── Traffic009.txt
+        ├── Traffic009.wav
+        ├── Traffic010.txt
+        ├── Traffic010.wav
+        ├── Traffic011.txt
+        ├── Traffic011.wav
+        ├── Traffic012.txt
+        ├── Traffic012.wav
+        ├── Traffic013.txt
+        ├── Traffic013.wav
+        ├── Traffic014.txt
+        ├── Traffic014.wav
+        ├── Traffic015.txt
+        ├── Traffic015.wav
+        ├── Traffic016.txt
+        ├── Traffic016.wav
+        └── TrafficJPG.JPG
+````
